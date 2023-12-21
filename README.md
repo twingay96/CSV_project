@@ -140,6 +140,42 @@ users 테이블을 채울 데이터가 올바르게 존재하는 것을 확인�
 ![image](https://github.com/twingay96/CSV_project/assets/64403357/1b6ca9ea-dd8e-459e-b486-e765d857c7ea)
 ![image](https://github.com/twingay96/CSV_project/assets/64403357/a862a70b-200a-4695-8a67-118f0e797775)
 
+![image](https://github.com/twingay96/CSV_project/assets/64403357/82c52772-e478-4701-9800-bfa7648564eb)
+
+하지만 현재 db의 칼럼구조가 csv파일와 동일하지 않기 때문에 db에 칼럼을 추가해야함:
+
+    rails generate migration AddColumnsToUsers
+
+![image](https://github.com/twingay96/CSV_project/assets/64403357/e2d913ff-8f9b-4907-9c2b-ca17ddc73ba8)
+
+추가후에 
+    rake db:migrate
+    
+명령어를 실행한 후 , 스키마파일에서 적용되었는지 체크:
+
+![image](https://github.com/twingay96/CSV_project/assets/64403357/0e664aeb-7e11-4e8f-8c1d-eae1c30a6268)
+
+![image](https://github.com/twingay96/CSV_project/assets/64403357/c33b9496-5dbb-45ab-ba43-676cf267b125)
+
+이제 rails c을 실행하여 테이블 스키마는 유지한채로 users테이블의 데이터만을 삭제하고 import 액션수정후 다시 csv파일을 업로드해보면 :
+![image](https://github.com/twingay96/CSV_project/assets/64403357/04c94746-4dce-4f3e-b1a5-597c90c6c89b)
+![image](https://github.com/twingay96/CSV_project/assets/64403357/b6fe5786-e5a5-4b0c-b794-9df8add52d31)
+![image](https://github.com/twingay96/CSV_project/assets/64403357/00432116-8359-4fcd-b72a-2ab5f3d1e20a)
+
+![image](https://github.com/twingay96/CSV_project/assets/64403357/3b681335-8e98-46ea-832d-e22b45b850ad)
+
+
+
+
+
+
+
+
+
+    
+
+  
+
 
 
 
