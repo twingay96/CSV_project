@@ -1,5 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
+<%= link_to "CSV 파일로 다운로드받기", users_path(format: :csv), download: ["Users", Date.today].join("_") %>
+
 <h1>Users: <%= @users.count %></h1>
 
 <%= form_with url: import_users_path, method: :post do |form| %>
