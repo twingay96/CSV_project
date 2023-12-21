@@ -10,7 +10,10 @@ class UsersController < ApplicationController
     #csv = CSV.parse(file_contents, headers: true, col_sep: ",")
     csv.each do |row|
       user_hash = {}
+      user_hash[:firstname] = row["First Name"]
+      user_hash[:Lastname] =  row["Last Name"]
       user_hash[:email] = row["Email Address"]
+      user_hash[:food] = row["Favorite Food"]
       #user_hash[:username] = row["Email Address"].split("@").first if row["Email Address"].present?
       #binding.b
       #p row
