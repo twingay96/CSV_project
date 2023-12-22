@@ -17,9 +17,10 @@ format: :csv 파라미터로 인해, 컨트롤러는 요청을 CSV형식으로 �
 실제 원본 csv 파일처럼 행구조로 표현하기 위해서 배열을 사용:
 ![image](https://github.com/twingay96/CSV_project/assets/64403357/6cd4f56e-0cba-4a54-ad83-0aa6448dbbc0)
 
-![image](https://github.com/twingay96/CSV_project/assets/64403357/29e1a256-7ed2-4df9-895d-21b572d1ffef)
+<img width="253" alt="image" src="https://github.com/twingay96/CSV_project/assets/64403357/41b05745-e571-45ab-a833-c5437d86b634">
 
-이때 &quot;는 큰따옴표(")를 HTML에서 안전하게 표현하기 위한 문자 엔티티 코드, CSV 파일을 생성할 때, 
+
+이때 "&quot;"는 큰따옴표(")를 HTML에서 안전하게 표현하기 위한 문자 엔티티 코드, CSV 파일을 생성할 때, 
 데이터 값에 큰따옴표가 문자열로 포함되어 있으면, 이를 HTML 엔티티 코드로 변환해서 보여주는 경우가 있기때문에 
 
 to_s 메서드를 사용한 후에 join(",")를 사용하여 배열의 각 원소를 문자열로 변환한 뒤, 이들을 콤마(,)로 구분하여 하나의 문자열로 합쳐줘야함. 
