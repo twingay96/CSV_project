@@ -1,4 +1,4 @@
-csv파일로 다운로드 받기위한 링크생성:
+![image](https://github.com/twingay96/CSV_project/assets/64403357/8c937898-235b-4a5b-b9a0-a360893910b0)![image](https://github.com/twingay96/CSV_project/assets/64403357/90ce84d7-407a-4617-ad61-0e4ce1fdd4c2)csv파일로 다운로드 받기위한 링크생성:
 
 ![image](https://github.com/twingay96/CSV_project/assets/64403357/ef838a04-e5d5-4bf1-b21f-5b88f8121040)
 ![image](https://github.com/twingay96/CSV_project/assets/64403357/4bdaa329-f74e-40d6-a6e1-f64633b8aa69)
@@ -54,6 +54,34 @@ csv파일 다운로드시 파일명을 변경하기 위해 다음과 같이 "CSV
 ![image](https://github.com/twingay96/CSV_project/assets/64403357/a49e087f-88f6-452d-8c68-55c95db6934a)
 
 2. 루비 CSV를 사용한 방법:
+
+![image](https://github.com/twingay96/CSV_project/assets/64403357/f7f11251-ec0e-4527-bea1-1683910ca937)
+
+
+
+respond_to 블록을 사용하여 요청에 따라 다른 포맷의 응답을 반환할 수 있습니다. 
+컨트롤러의 index 액션에서 format.csv가 정의되어 있기 때문에, .csv 요청이 들어오면 CsvImportUsersService를 통해 CSV 데이터를 처리하여 반환합니다
+
+이 경우엔 index.csv.erb 템플릿을 사용하지 않고, ruby의 내장 csv라이브러리를 사용하여 데이터를 
+csv문자열로 변환하고 send_data메서드를 통해 이를 클라이언트측에 전송하는 방식
+
+또는 format.csv에대한 csv파일을 생성하는 코드를 직접 정의하는 방식이 있음:
+
+![Uploading image.jpeg…]()
+
+![Uploading image.png…]()
+
+CSV.generate_line(["id", "email"]) 코드는 
+CSV 파일의 첫 번째 줄로 컬럼 이름을 포함하는 헤더 행을 생성합니다. 
+이 헤더 행은 데이터의 각 컬럼이 무엇을 나타내는지 정의하는 역할을 함
+
+CSV 파일은 텍스트 기반의 파일 형식으로, 각각의 컬럼은 일반적으로 쉼표나 다른 특정 문자로 구분됩니다. 
+
+들여쓰기는 CSV의 데이터 필드에 영향을 주지 않으며, 데이터의 구조나 정렬 상태에 영향을 미치지 않습니다. 그러나, 코드의 가독성과 유지 관리를 위해서는 들여쓰기를 적절하게 하는 것이 좋습니다.
+
+
+
+
 
 
 
