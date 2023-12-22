@@ -1,8 +1,3 @@
-![image](https://github.com/twingay96/CSV_project/assets/64403357/12ad9a4a-6dcb-434d-8760-ab626ed2426a)![image](https://github.com/twingay96/CSV_project/assets/64403357/01ad7d06-cfba-47c5-9446-1b127d5e066f)![image](https://github.com/twingay96/CSV_project/assets/64403357/b84e00bd-8fd8-4b89-ad87-0fe6d70dea15)![image](https://github.com/twingay96/CSV_project/assets/64403357/d491e29c-b090-4433-b654-15cf71d1b56e)![image](https://github.com/twingay96/CSV_project/assets/64403357/6d505cee-0b32-436a-84b8-06862229dc1f)![image](https://github.com/twingay96/CSV_project/assets/64403357/2b0904e5-13ad-4808-a2b8-15d304b6dd3a)![image](https://github.com/twingay96/CSV_project/assets/64403357/8c937898-235b-4a5b-b9a0-a360893910b0)![image](https://github.com/twingay96/CSV_project/assets/64403357/90ce84d7-407a-4617-ad61-0e4ce1fdd4c2)csv파일로 다운로드 받기위한 링크생성:
-
-![image](https://github.com/twingay96/CSV_project/assets/64403357/ef838a04-e5d5-4bf1-b21f-5b88f8121040)
-![image](https://github.com/twingay96/CSV_project/assets/64403357/4bdaa329-f74e-40d6-a6e1-f64633b8aa69)
-
 format: :csv 파라미터로 인해, 컨트롤러는 요청을 CSV형식으로 응답해야함을 인식하게됨
 이에대해 응답하는 방법으로는 총 3개가지가 있음.
 
